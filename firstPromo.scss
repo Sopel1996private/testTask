@@ -1,0 +1,32 @@
+.section-inner{
+    max-width: 1330px;
+    margin: auto;
+    height: 100vh;    
+}
+.btn{
+
+}
+
+.firstPromo{
+
+    .section-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+        &__productName{
+            
+        }
+        &__good{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            &-img{}
+            &__characteristics{
+                &-item{}
+            }
+        }
+}
