@@ -1,10 +1,14 @@
+*{
+    box-sizing: border-box;
+}
 .section-inner{
     max-width: 1330px;
     margin: auto;
     height: 100vh;    
+    border: 1px solid red;
 }
 .btn{
-
+    display: block;
 }
 
 .firstPromo{
@@ -29,4 +33,10 @@
                 &-item{}
             }
         }
+}
+
+input:invalid {
+    border-color: red;
+    color: red;
+    box-shadow: none;
 }

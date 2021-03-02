@@ -1,0 +1,51 @@
+.reviews{
+    // background: #000;
+    background: rgb(157,110,213);
+    background: linear-gradient(0deg, rgba(157,110,213,1) 0%, rgba(253,45,227,1) 49%, rgba(157,110,213,1) 100%);
+
+    .section-inner{
+        height: 50vh;
+    }
+    &__item{
+        background: rgb(59,57,60);
+        background: linear-gradient(0deg, rgba(59,57,60,1) 0%, rgba(176,169,169,0.7231267507002801) 49%, rgba(59,57,60,1) 100%);
+        border-radius: 10px;
+        box-shadow: 0 0 5px 10px rgba(197, 195, 195, 0.425);
+        height: 65%;
+        width: 35%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        &-img{
+            background: transparent url("300x300.png") 50% 50% no-repeat;
+            background-size: contain;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        &-name{
+            color: #fff;
+        }
+        &-value{
+            width: 60%;
+            color: #fff;
+        }
+    }
+    
+    
+    .owl-carousel,
+    .owl-stage-outer,
+    .owl-stage{
+        height: 100%;
+    }
+   
+    .owl-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}

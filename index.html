@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    
     <link rel="stylesheet" href="firstPromo.css">
     <link rel="stylesheet" href="composition.css">
     <link rel="stylesheet" href="reviews.css">
     <link rel="stylesheet" href="secondPromo.css">
     <link rel="stylesheet" href="checkout.css">
+    
+    <script src="jquery-3.6.0.min.js" defer></script>
+    <script src="owlcarousel/owl.carousel.js" defer></script>
+
+
+    <script src="script.js" defer></script>
     <title>LevelUp</title>
 </head>
 <body>
@@ -31,43 +40,43 @@
         <div class="section-inner">
             <div class="composition__sideColumn">
                 <div class="composition__sideColumn-item">
-                    <img src="" alt="" class="composition__sideColumn-item-img">
+                    <img src="300x300.png" alt="first" class="composition__sideColumn-item-img">
                     <p class="composition__sideColumn-item-text">
                         Компонент 1
                     </p>
                 </div>
                 <div class="composition__sideColumn-item">
-                    <img src="" alt="" class="composition__sideColumn-item-img">
+                    <img src="300x300.png" alt="second" class="composition__sideColumn-item-img">
                     <p class="composition__sideColumn-item-text">
                         Компонент 2
                     </p>
                 </div>
                 <div class="composition__sideColumn-item">
-                    <img src="" alt="" class="composition__sideColumn-item-img">
+                    <img src="300x300.png" alt="third" class="composition__sideColumn-item-img">
                     <p class="composition__sideColumn-item-text">
                         Компонент 3
                     </p>
                 </div>
             </div>
             <div class="composition__centerColumn">
-                <img src="prod.png" alt="goodImg" class="composition__secondColumn- img">
+                <img src="prod.png" alt="goodImg" class="composition__centerColumn-img">
                 <a href="#checkout" class="btn" >заказать</a>
             </div>
             <div class="composition__sideColumn">
                 <div class="composition__sideColumn-item">
-                    <img src="" alt="" class="composition__sideColumn-item-img">
+                    <img src="300x300.png" alt="forth" class="composition__sideColumn-item-img">
                     <p class="composition__sideColumn-item-text">
                         Компонент 4
                     </p>
                 </div>
                 <div class="composition__sideColumn-item">
-                    <img src="" alt="" class="composition__sideColumn-item-img">
+                    <img src="300x300.png" alt="fifth" class="composition__sideColumn-item-img">
                     <p class="composition__sideColumn-item-text">
                         Компонент 5
                     </p>
                 </div>
                 <div class="composition__sideColumn-item">
-                    <img src="" alt="" class="composition__sideColumn-item-img">
+                    <img src="300x300.png" alt="sixth" class="composition__sideColumn-item-img">
                     <p class="composition__sideColumn-item-text">
                         Компонент 6
                     </p>
@@ -77,16 +86,95 @@
     </section>
     <section class="reviews">
         <div class="section-inner">
-
+            <div class="owl-carousel">
+                <div class="reviews__item"> 
+                    <div class="reviews__item-img">
+                        <!-- <img src="300x300.png" alt="" class="reviews__item-img"> -->
+                    </div>   
+                    <div class="reviews__item-name">Имя пользователя</div>   
+                    <div class="reviews__item-value">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto similique quo molestiae reprehenderit optio nisi enim commodi eius, 
+                        sit recusandae. Illo voluptatibus harum inventore cumque totam sit, nisi doloribus eos.
+                    </div>   
+                </div>
+                <div class="reviews__item"> 
+                    <div class="reviews__item-img">
+                        <!-- <img src="300x300.png" alt="" class="reviews__item-img"> -->
+                    </div>   
+                    <div class="reviews__item-name">Имя пользователя</div>   
+                    <div class="reviews__item-value">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto similique quo molestiae reprehenderit optio nisi enim commodi eius, 
+                        sit recusandae. Illo voluptatibus harum inventore cumque totam sit, nisi doloribus eos.
+                    </div>   
+                </div>
+                <div class="reviews__item"> 
+                    <div class="reviews__item-img">
+                        <!-- <img src="300x300.png" alt="" class="reviews__item-img"> -->
+                    </div>   
+                    <div class="reviews__item-name">Имя пользователя</div>   
+                    <div class="reviews__item-value">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto similique quo molestiae reprehenderit optio nisi enim commodi eius, 
+                        sit recusandae. Illo voluptatibus harum inventore cumque totam sit, nisi doloribus eos.
+                    </div>   
+                </div>
+              </div>
         </div>  
     </section>
     <section class="secondPromo">
         <div class="section-inner">
-
+            <div class="secondPromo__good">
+                <img src="doctorLvlUp.png" alt="doctorWithProduct" class="secondPromo__good-img">
+                <p class="secondPromo__good-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus voluptates unde sapiente minus, blanditiis autem obcaecati necessitatibus. 
+                    Cum illo quia repudiandae assumenda possimus veniam iste cupiditate eum inventore temporibus!
+                </p>
+            </div>
+            <ul class="secondPromo__characteristics">
+                <li class="secondPromo__characteristics-item">Первая характеристика</li>
+                <li class="secondPromo__characteristics-item">Вторая характеристика</li>
+                <li class="secondPromo__characteristics-item">Третья характеристика</li>
+            </ul>
+            <a href="#checkout" class="btn" >заказать</a>
         </div>  
     </section>
     <section class="checkout" id="checkout">
         <div class="section-inner">
+            <div class="checkout__nameProduct"></div>
+            <div class="checkout__timer">
+
+                <h1 class="countdown-title">Акция! Всего один день!</h1>
+                <div id="countdown" class="countdown">
+                    
+                    <div class="countdown-number">
+                        <span class="hours countdown-time"></span>
+                    </div>
+                    <span class="countdown-text">Hours</span>
+                    <div class="countdown-number">
+                        <span class="minutes countdown-time"></span>
+                    </div>
+                    <span class="countdown-text">Minutes</span>
+                    <div class="countdown-number">
+                        <span class="seconds countdown-time"></span>
+                    </div>
+                    <span class="countdown-text">Seconds</span>
+                </div>
+
+            </div>
+            <div class="checkout__priceForm">
+                <form action="" method="get" class="checkout__priceForm-form">                   
+                    
+                    <div class="on-focus clearfix" style="position: relative; padding: 0px; margin: 10px auto; display: table; float: left">
+                        <input type="text" name="customerName" id="customerName" class="checkout__priceForm-form-name" autocomplete="off">
+                        <div class="tool-tip-bottom  slideIn ">Введите имя. Например: Иван Иванов</div>
+                    </div>
+                    <div class="on-focus clearfix" style="position: relative; padding: 0px; margin: 10px auto; display: table; float: left">
+                        <input type="tel" name="customerPhone" id="customerPhone" pattern="[\d]+$" class="checkout__priceForm-form-phone" autocomplete="off"> 
+                        <div class="tool-tip-bottom  slideIn ">Введите номер телефона в формате: +79999999999</div>
+                    </div>
+                    <input type="submit" value="заказать" class="btn">
+                </form>
+                <div class="checkout__priceForm-price"></div>
+            </div>
 
         </div>  
     </section>
