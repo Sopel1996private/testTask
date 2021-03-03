@@ -1,41 +1,50 @@
 .checkout{
+  background: rgb(102,161,230);
+  background: linear-gradient(0deg, rgba(102,161,230,0.74) 0%, rgba(189, 187, 187, 0.723) 50%, rgba(95, 156, 226, 0.737) 100%);
   .section-inner{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  &__nameProduct{}
+  &__nameProduct{
+    font-size: 300%;
+    font-weight: bold;
+    color: #d1aa12;
+  }
   &__timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
       &-title{
-          color: #396;
+          color: rgb(228, 54, 54);
           font-weight: 100;
-          font-size: 40px;
+          font-size: 250%;
           margin: 40px 0px 20px;
+          font-weight: bold;
+          text-align: center;
       }
       &-time{
-          padding: 15px;
-          border-radius: 3px;
+            border-radius: 3px;
           display: inline-block;
       }
       &-text{
           display: inline-block;
-          padding-top: 5px;
-          font-size: 16px;
-          color: #00816a;
+          font-size: 65%;
+          color: rgb(228, 54, 54);
       }
       &-number{
-          padding: 10px;
           border-radius: 3px;
           display: inline-block;
       }
       .timer{
           font-family: sans-serif;
-          color: #00816a;
+          color: rgb(228, 54, 54);
           display: inline-block;
-          font-weight: 100;
+          font-weight: bold;
           text-align: center;
-          font-size: 30px;
+          font-size: 240%;
       }
       .hours {}
       .minutes {}
@@ -48,21 +57,39 @@
         align-items: center;
         justify-content: space-around;
           &-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            label{
+              display: block;
+              margin-bottom: 1vw;
+              align-self: flex-start;
+            }
               .on-focus{
+                  position: relative;
                   input:focus + .tool-tip-bottom{
                       visibility: visible;
                       opacity: 1;
                       transition: all 240ms ease-in-out;		
                   }
               }
-              &-name{}
-              &-phone{}
+              &-name{
+                font-size: 100%;
+                padding: 3px 5px;
+                margin-bottom: 5vw;
+              }
+              &-phone{
+                font-size: 100%;
+                padding: 3px 5px;
+                margin-bottom: 5vw;
+              }
 
               .tool-tip-bottom{
                   color: #fff;
                   background-color: rgba( 0, 0, 0, .7);
-                  text-shadow: none;
-                  font-size: .8em;
+                  font-size: 80%;
                   visibility: hidden;
                   border-radius: 7px;	
                   text-align: center;	
@@ -72,26 +99,10 @@
                   position: absolute;
                   cursor: default;
                   transition: all 240ms ease-in-out;	
-                  width: 80px;
-                  height: 22px;
-                  margin-left: -43px;
-                  top: 115%;
-                  bottom: auto;
-                  left: 50%;
-                  margin-bottom: auto;
-                  
-                  &:after{
-                      position: absolute;
-                      top: -12px;
-                      left: 50%;
-                      margin-left: -7px;
-                      content: ' ';
-                      height: 0px;
-                      width: 0px;
-                      border: 6px solid transparent;
-                      border-top-color: transparent;	
-                      border-bottom-color: rgba( 0, 0, 0, .6);	
-                  }	
+                  width: 225px; 
+                  height: 50px;
+                  top: calc(100% - 5vw + 5px);
+                  left: calc(100% - 225px / 2);
               }
           }
           &-priceProd{
@@ -102,17 +113,25 @@
             &-price{
               font-size: 150%;
               &-old{
+                font-size: 120%;
+                color: rgb(119, 115, 115);
                 display: block;
                 text-decoration: line-through;
-                font-size: smaller;
+                margin: 2vw;
+                text-align: center;
               }
               &-new{
+                text-align: center;
+                color: rgb(228, 54, 54);;
                 display: block;
-                font-size: larger;
+                margin: 1vw;
+                font-size: 200%;
               }
             }
             &-prod{
-
+              display: flex;
+              justify-content: center;
+              align-items: center;
               &-img{}
             }
           }

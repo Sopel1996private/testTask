@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="scss/reviews.css">
     <link rel="stylesheet" href="scss/secondPromo.css">
     <link rel="stylesheet" href="scss/checkout.css">
+    <link rel="stylesheet" href="scss/media.css">
 
     <script src="js/jquery-3.6.0.min.js" defer></script>
     <script src="owlcarousel/owl.carousel.js" defer></script>
@@ -25,6 +26,9 @@
 
 <body>
     <section class="firstPromo">
+        <div class="firstPromo__media">
+            <video src="/video/bgVideo.mp4" autoplay muted loop class="firstPromo__media-video"></video>
+        </div>
         <div class="section-inner">
             <div class="firstPromo__productName">LevelUp</div>
             <div class="firstPromo__good">
@@ -156,28 +160,30 @@
                     <div class="checkout__timer-number">
                         <span class="hours checkout__timer-time"></span>
                     </div>
-                    <span class="checkout__timer-text">Hours</span>
+                    <span class="checkout__timer-text">ч.</span>
                     <div class="checkout__timer-number">
                         <span class="minutes checkout__timer-time"></span>
                     </div>
-                    <span class="checkout__timer-text">Minutes</span>
+                    <span class="checkout__timer-text">мин.</span>
                     <div class="checkout__timer-number">
                         <span class="seconds checkout__timer-time"></span>
                     </div>
-                    <span class="checkout__timer-text">Seconds</span>
+                    <span class="checkout__timer-text">сек.</span>
                 </div>
 
             </div>
             <div class="checkout__priceForm">
                 <form action="" method="get" class="checkout__priceForm-form">
 
+                    <label for="customerName">Ваше имя:</label>
                     <div class="on-focus">
                         <input type="text" name="customerName" id="customerName" class="checkout__priceForm-form-name"
                             autocomplete="off">
                         <div class="tool-tip-bottom">Введите имя. Например: Иван Иванов</div>
                     </div>
+                    <label for="customerPhone">Ваш телефон:</label>
                     <div class="on-focus">
-                        <input type="tel" name="customerPhone" id="customerPhone" pattern="[\d]+$"
+                        <input type="tel" name="customerPhone" id="customerPhone" pattern="[\d +]+$"
                             class="checkout__priceForm-form-phone" autocomplete="off">
                         <div class="tool-tip-bottom">Введите номер телефона в формате: +79999999999</div>
                     </div>

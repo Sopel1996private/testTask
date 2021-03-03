@@ -1,10 +1,12 @@
 .secondPromo{
+    background: rgb(236,245,255);
+    background: radial-gradient(circle, rgba(236,245,255,1) 0%, rgba(102,161,230,0.7231267507002801) 45%, rgba(237,240,244,1) 89%);
 
     .section-inner{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
     &__good{
         display: flex;
@@ -16,6 +18,7 @@
         }
         &-description{
             width: 35%;
+            line-height: 2;
         }
     }
     &__characteristics{
@@ -24,6 +27,12 @@
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        &-item{}
+        list-style: none;
+        &-item{
+            width: 32%;
+            font-weight: bold;
+            font-style: italic;
+            word-wrap: break-word;
+        }
     }
 }
